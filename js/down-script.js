@@ -8,19 +8,19 @@
 
   function trackScroll() {
     let scrolled = window.pageYOffset;
-    let coords = document.documentElement.clientHeight;
+    let coords = 200;
 
-    if (scrolled > coords) {
-      upDownBtn.classList.add('up_down_btn-show');
-      upDownBtn.innerHTML = '&laquo;';
-      upDownBtn.setAttribute('title', 'Наверх');
-      check = false;
-    }
     if (scrolled === 0) {
       upDownBtn.classList.add('up_down_btn-show');
       upDownBtn.innerHTML = '&raquo;';
       upDownBtn.setAttribute('title', 'Вниз');
       check = true;
+    }
+    if (scrolled > coords) {
+      upDownBtn.classList.add('up_down_btn-show');
+      upDownBtn.innerHTML = '&laquo;';
+      upDownBtn.setAttribute('title', 'Наверх');
+      check = false;
     }
   }
 

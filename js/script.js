@@ -5,7 +5,7 @@
 
   function trackScroll() {
     let scrolled = window.pageYOffset;
-    let coords = 400;
+    let coords = 200;
 
     if (scrolled > coords) {
       goTopBtn.classList.add('up_down_btn-show');
