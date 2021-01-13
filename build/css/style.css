@@ -1,3 +1,22 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h3 {
+  font-weight: 600;
+  color: #4d4d50;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #646464;
+}
 /*.topNubex {
   position: fixed;
   width: 40px;
@@ -39,20 +58,15 @@
   display: flex;
   flex-direction: column;
 }*/
-
 h1 {
   text-align: center;
 }
-
 .matrix {
   width: 400px;
   margin: auto;
   text-align: justify;
 }
-
-
 /* begin Up-Down button  */
-
 .up_down_btn {
   position: fixed;
   z-index: 9999;
@@ -61,10 +75,11 @@ h1 {
   right: 60px;
   bottom: 60px;
   padding-bottom: 6px;
-  color: @color-light-lilac;
-  border: 3px solid @color-light-lilac;
+  color: #8B7EAC;
+  border: 3px solid #8B7EAC;
   border-radius: 50%;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   font-family: 'Ubuntu', sans-serif;
   font-size: 27px;
   line-height: 27px;
@@ -72,18 +87,33 @@ h1 {
   cursor: pointer;
   display: none;
 }
-
 .up_down_btn:hover {
   text-decoration: none;
   background: #e9ebec;
 }
-
 .up_down_btn-show {
   display: block;
 }
-
 .up_down_btn-disabled {
   pointer-events: none;
   cursor: default;
   opacity: 0;
+}
+@media (min-width: 786px) {
+  .container {
+    width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+@media (min-width: 1458px) {
+  .container {
+    width: 1440px;
+    padding: 0 30px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }

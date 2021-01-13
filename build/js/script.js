@@ -1,0 +1,1 @@
+!function(){"use strict";var e=document.querySelector(".up_down_btn");window.addEventListener("scroll",(function(){var n=window.pageYOffset,t=document.documentElement.clientHeight;n>t&&e.classList.add("up_down_btn-show"),n<t&&e.classList.remove("up_down_btn-show")})),e.addEventListener("click",(function e(){window.pageYOffset>0&&(window.scrollBy(0,-60),setTimeout(e,0))}))}();
